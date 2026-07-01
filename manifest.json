@@ -17,10 +17,6 @@
       "backend": {
         "id": "supascan-backend",
       },
-      "vite": {
-        "plugins": [vue()],
-      },
-    },
     {
       "kind": "backend",
       "id": "supascan-backend",
