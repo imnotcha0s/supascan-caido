@@ -1,0 +1,21 @@
+{
+  "name": "supascan",
+  "private": true,
+  "scripts": {
+    "build": "caido-dev build",
+    "watch": "caido-dev watch",
+    "lint": "eslint packages/*/src --ext .ts,.vue",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@caido-community/dev": "^0.1.7",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-vue": "^9.33.0",
+    "typescript": "^5.0.0",
+    "vue-eslint-parser": "^9.4.3"
+  }
+}
