@@ -5,7 +5,7 @@ export default defineConfig({
   id: "supascan",
   name: "SupaScan",
   description: "Supabase misconfiguration scanner",
-  version: "0.1.1",
+  version: "0.1.2",
   author: {
     name: "Cha0s",
     email: "notcha0s@proton.me",
