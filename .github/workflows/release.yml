@@ -50,9 +50,11 @@ jobs:
           echo "version=${VERSION}" >> $GITHUB_OUTPUT
           
       - name: Create release
-        uses: ncipollo/release-action@v1
+        uses: softprops/action-gh-release@v2
         with:
-          tag: ${{ steps.meta.outputs.version }}
-          commit: ${{ github.sha }}
-          body: 'Release ${{ steps.meta.outputs.version }}'
-          artifacts: 'dist/plugin_package.zip,dist/plugin_package.zip.sig'
+          tag_name: ${{ steps.meta.outputs.version }}
+          name: ${{ steps.meta.outputs.version }}
+          make_latest: true
+          files: |
+            dist/plugin_package.zip
+            dist/plugin_package.zip.sig
